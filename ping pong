@@ -1,3 +1,4 @@
+//cavalo dos cavalos ;-;
 let xBolinha = 300;
 let yBolinha = 200;
 let diametro = 15;
@@ -9,17 +10,13 @@ let xRaquete = 5;
 let yRaquete = 150;
 let raqueteComprimento = 10;
 let raqueteAltura = 90;
-
-
-
 let velocidadeXBolinha = 6
 let velocidadeYBolinha = 6
 
-
-
+//variaveis do campo 1;d
 function setup(){ 
     createCanvas(600, 400)
-  
+   createCanvas(600, 400); } function draw() { background(0); circle(xBolinha,
 }
 
 function draw() {
@@ -37,15 +34,8 @@ function draw() {
     rect(xRaquete,yRaquete,raquetecomprimento,raqueteltura)
 }
 
-
-    
-
-
 function setup() {
     createCanvas(600, 400);
-    
-
-
 
 }
 
@@ -62,12 +52,10 @@ function draw() {
         velocidadeYBolinha *= -1;
     }
 }
-  
-  
-
 
 function verificaColisaoBorda(){
   if (xBolinha + raio > width || xBolinha - raio < 0) {
+
         velocidadeXBolinha *= -1;
     }  
     if (yBolinha + raio > height || yBolinha -raio < 0) {
@@ -78,11 +66,6 @@ function verificaColisaoBorda(){
 function mostraRaquete() {
     rect(xRaquete, yRaquete, raqueteComprimento, raqueteAltura);
 
-
-
-
-
-
 }
 
 function movimentaMinhaRaquete() {
@@ -92,26 +75,5 @@ function movimentaMinhaRaquete() {
     if (keyIsDown(DOWN_ARROW)) {
         yRaquete += 10;
     }
+
 }
-
-
-
-
-
-
-
-
-
-
-5
-
-
-
-
-
-
-
-
-
-
-
